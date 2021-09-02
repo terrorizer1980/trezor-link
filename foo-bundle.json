@@ -1,0 +1,1256 @@
+{
+  "nested": {
+    "hw": {
+      "nested": {
+        "trezor": {
+          "nested": {
+            "messages": {
+              "options": {
+                "java_package": "com.satoshilabs.trezor.lib.protobuf",
+                "java_outer_classname": "TrezorMessage"
+              },
+              "nested": {
+                "wire_in": {
+                  "type": "bool",
+                  "id": 50002,
+                  "extend": "google.protobuf.EnumValueOptions"
+                },
+                "wire_out": {
+                  "type": "bool",
+                  "id": 50003,
+                  "extend": "google.protobuf.EnumValueOptions"
+                },
+                "wire_debug_in": {
+                  "type": "bool",
+                  "id": 50004,
+                  "extend": "google.protobuf.EnumValueOptions"
+                },
+                "wire_debug_out": {
+                  "type": "bool",
+                  "id": 50005,
+                  "extend": "google.protobuf.EnumValueOptions"
+                },
+                "wire_tiny": {
+                  "type": "bool",
+                  "id": 50006,
+                  "extend": "google.protobuf.EnumValueOptions"
+                },
+                "wire_bootloader": {
+                  "type": "bool",
+                  "id": 50007,
+                  "extend": "google.protobuf.EnumValueOptions"
+                },
+                "wire_no_fsm": {
+                  "type": "bool",
+                  "id": 50008,
+                  "extend": "google.protobuf.EnumValueOptions"
+                },
+                "bitcoin_only": {
+                  "type": "bool",
+                  "id": 60000,
+                  "extend": "google.protobuf.EnumValueOptions"
+                },
+                "has_bitcoin_only_values": {
+                  "type": "bool",
+                  "id": 51001,
+                  "extend": "google.protobuf.EnumOptions"
+                },
+                "unstable": {
+                  "type": "bool",
+                  "id": 52001,
+                  "extend": "google.protobuf.MessageOptions"
+                },
+                "wire_type": {
+                  "type": "uint32",
+                  "id": 52002,
+                  "extend": "google.protobuf.MessageOptions"
+                },
+                "include_in_bitcoin_only": {
+                  "type": "bool",
+                  "id": 60000,
+                  "extend": "google.protobuf.MessageOptions"
+                },
+                "experimental": {
+                  "type": "bool",
+                  "id": 53001,
+                  "extend": "google.protobuf.FieldOptions"
+                },
+                "MessageType": {
+                  "options": {
+                    "(has_bitcoin_only_values)": true
+                  },
+                  "values": {
+                    "MessageType_Initialize": 0,
+                    "MessageType_Ping": 1,
+                    "MessageType_Success": 2,
+                    "MessageType_Failure": 3,
+                    "MessageType_ChangePin": 4,
+                    "MessageType_WipeDevice": 5,
+                    "MessageType_GetEntropy": 9,
+                    "MessageType_Entropy": 10,
+                    "MessageType_LoadDevice": 13,
+                    "MessageType_ResetDevice": 14,
+                    "MessageType_Features": 17,
+                    "MessageType_PinMatrixRequest": 18,
+                    "MessageType_PinMatrixAck": 19,
+                    "MessageType_Cancel": 20,
+                    "MessageType_LockDevice": 24,
+                    "MessageType_ApplySettings": 25,
+                    "MessageType_ButtonRequest": 26,
+                    "MessageType_ButtonAck": 27,
+                    "MessageType_ApplyFlags": 28,
+                    "MessageType_BackupDevice": 34,
+                    "MessageType_EntropyRequest": 35,
+                    "MessageType_EntropyAck": 36,
+                    "MessageType_PassphraseRequest": 41,
+                    "MessageType_PassphraseAck": 42,
+                    "MessageType_RecoveryDevice": 45,
+                    "MessageType_WordRequest": 46,
+                    "MessageType_WordAck": 47,
+                    "MessageType_GetFeatures": 55,
+                    "MessageType_SdProtect": 79,
+                    "MessageType_ChangeWipeCode": 82,
+                    "MessageType_EndSession": 83,
+                    "MessageType_DoPreauthorized": 84,
+                    "MessageType_PreauthorizedRequest": 85,
+                    "MessageType_CancelAuthorization": 86,
+                    "MessageType_RebootToBootloader": 87,
+                    "MessageType_SetU2FCounter": 63,
+                    "MessageType_GetNextU2FCounter": 80,
+                    "MessageType_NextU2FCounter": 81,
+                    "MessageType_Deprecated_PassphraseStateRequest": 77,
+                    "MessageType_Deprecated_PassphraseStateAck": 78,
+                    "MessageType_FirmwareErase": 6,
+                    "MessageType_FirmwareUpload": 7,
+                    "MessageType_FirmwareRequest": 8,
+                    "MessageType_SelfTest": 32,
+                    "MessageType_GetPublicKey": 11,
+                    "MessageType_PublicKey": 12,
+                    "MessageType_SignTx": 15,
+                    "MessageType_TxRequest": 21,
+                    "MessageType_TxAck": 22,
+                    "MessageType_GetAddress": 29,
+                    "MessageType_Address": 30,
+                    "MessageType_SignMessage": 38,
+                    "MessageType_VerifyMessage": 39,
+                    "MessageType_MessageSignature": 40,
+                    "MessageType_GetOwnershipId": 43,
+                    "MessageType_OwnershipId": 44,
+                    "MessageType_GetOwnershipProof": 49,
+                    "MessageType_OwnershipProof": 50,
+                    "MessageType_AuthorizeCoinJoin": 51,
+                    "MessageType_CipherKeyValue": 23,
+                    "MessageType_CipheredKeyValue": 48,
+                    "MessageType_SignIdentity": 53,
+                    "MessageType_SignedIdentity": 54,
+                    "MessageType_GetECDHSessionKey": 61,
+                    "MessageType_ECDHSessionKey": 62,
+                    "MessageType_CosiCommit": 71,
+                    "MessageType_CosiCommitment": 72,
+                    "MessageType_CosiSign": 73,
+                    "MessageType_CosiSignature": 74,
+                    "MessageType_DebugLinkDecision": 100,
+                    "MessageType_DebugLinkGetState": 101,
+                    "MessageType_DebugLinkState": 102,
+                    "MessageType_DebugLinkStop": 103,
+                    "MessageType_DebugLinkLog": 104,
+                    "MessageType_DebugLinkMemoryRead": 110,
+                    "MessageType_DebugLinkMemory": 111,
+                    "MessageType_DebugLinkMemoryWrite": 112,
+                    "MessageType_DebugLinkFlashErase": 113,
+                    "MessageType_DebugLinkLayout": 9001,
+                    "MessageType_DebugLinkReseedRandom": 9002,
+                    "MessageType_DebugLinkRecordScreen": 9003,
+                    "MessageType_DebugLinkEraseSdCard": 9005,
+                    "MessageType_DebugLinkWatchLayout": 9006,
+                    "MessageType_EthereumGetPublicKey": 450,
+                    "MessageType_EthereumPublicKey": 451,
+                    "MessageType_EthereumGetAddress": 56,
+                    "MessageType_EthereumAddress": 57,
+                    "MessageType_EthereumSignTx": 58,
+                    "MessageType_EthereumTxRequest": 59,
+                    "MessageType_EthereumTxAck": 60,
+                    "MessageType_EthereumSignMessage": 64,
+                    "MessageType_EthereumVerifyMessage": 65,
+                    "MessageType_EthereumMessageSignature": 66,
+                    "MessageType_NEMGetAddress": 67,
+                    "MessageType_NEMAddress": 68,
+                    "MessageType_NEMSignTx": 69,
+                    "MessageType_NEMSignedTx": 70,
+                    "MessageType_NEMDecryptMessage": 75,
+                    "MessageType_NEMDecryptedMessage": 76,
+                    "MessageType_LiskGetAddress": 114,
+                    "MessageType_LiskAddress": 115,
+                    "MessageType_LiskSignTx": 116,
+                    "MessageType_LiskSignedTx": 117,
+                    "MessageType_LiskSignMessage": 118,
+                    "MessageType_LiskMessageSignature": 119,
+                    "MessageType_LiskVerifyMessage": 120,
+                    "MessageType_LiskGetPublicKey": 121,
+                    "MessageType_LiskPublicKey": 122,
+                    "MessageType_TezosGetAddress": 150,
+                    "MessageType_TezosAddress": 151,
+                    "MessageType_TezosSignTx": 152,
+                    "MessageType_TezosSignedTx": 153,
+                    "MessageType_TezosGetPublicKey": 154,
+                    "MessageType_TezosPublicKey": 155,
+                    "MessageType_StellarSignTx": 202,
+                    "MessageType_StellarTxOpRequest": 203,
+                    "MessageType_StellarGetAddress": 207,
+                    "MessageType_StellarAddress": 208,
+                    "MessageType_StellarCreateAccountOp": 210,
+                    "MessageType_StellarPaymentOp": 211,
+                    "MessageType_StellarPathPaymentOp": 212,
+                    "MessageType_StellarManageOfferOp": 213,
+                    "MessageType_StellarCreatePassiveOfferOp": 214,
+                    "MessageType_StellarSetOptionsOp": 215,
+                    "MessageType_StellarChangeTrustOp": 216,
+                    "MessageType_StellarAllowTrustOp": 217,
+                    "MessageType_StellarAccountMergeOp": 218,
+                    "MessageType_StellarManageDataOp": 220,
+                    "MessageType_StellarBumpSequenceOp": 221,
+                    "MessageType_StellarSignedTx": 230,
+                    "MessageType_CardanoSignTx": 303,
+                    "MessageType_CardanoGetPublicKey": 305,
+                    "MessageType_CardanoPublicKey": 306,
+                    "MessageType_CardanoGetAddress": 307,
+                    "MessageType_CardanoAddress": 308,
+                    "MessageType_CardanoSignedTx": 310,
+                    "MessageType_CardanoSignedTxChunk": 311,
+                    "MessageType_CardanoSignedTxChunkAck": 312,
+                    "MessageType_RippleGetAddress": 400,
+                    "MessageType_RippleAddress": 401,
+                    "MessageType_RippleSignTx": 402,
+                    "MessageType_RippleSignedTx": 403,
+                    "MessageType_MoneroTransactionInitRequest": 501,
+                    "MessageType_MoneroTransactionInitAck": 502,
+                    "MessageType_MoneroTransactionSetInputRequest": 503,
+                    "MessageType_MoneroTransactionSetInputAck": 504,
+                    "MessageType_MoneroTransactionInputsPermutationRequest": 505,
+                    "MessageType_MoneroTransactionInputsPermutationAck": 506,
+                    "MessageType_MoneroTransactionInputViniRequest": 507,
+                    "MessageType_MoneroTransactionInputViniAck": 508,
+                    "MessageType_MoneroTransactionAllInputsSetRequest": 509,
+                    "MessageType_MoneroTransactionAllInputsSetAck": 510,
+                    "MessageType_MoneroTransactionSetOutputRequest": 511,
+                    "MessageType_MoneroTransactionSetOutputAck": 512,
+                    "MessageType_MoneroTransactionAllOutSetRequest": 513,
+                    "MessageType_MoneroTransactionAllOutSetAck": 514,
+                    "MessageType_MoneroTransactionSignInputRequest": 515,
+                    "MessageType_MoneroTransactionSignInputAck": 516,
+                    "MessageType_MoneroTransactionFinalRequest": 517,
+                    "MessageType_MoneroTransactionFinalAck": 518,
+                    "MessageType_MoneroKeyImageExportInitRequest": 530,
+                    "MessageType_MoneroKeyImageExportInitAck": 531,
+                    "MessageType_MoneroKeyImageSyncStepRequest": 532,
+                    "MessageType_MoneroKeyImageSyncStepAck": 533,
+                    "MessageType_MoneroKeyImageSyncFinalRequest": 534,
+                    "MessageType_MoneroKeyImageSyncFinalAck": 535,
+                    "MessageType_MoneroGetAddress": 540,
+                    "MessageType_MoneroAddress": 541,
+                    "MessageType_MoneroGetWatchKey": 542,
+                    "MessageType_MoneroWatchKey": 543,
+                    "MessageType_DebugMoneroDiagRequest": 546,
+                    "MessageType_DebugMoneroDiagAck": 547,
+                    "MessageType_MoneroGetTxKeyRequest": 550,
+                    "MessageType_MoneroGetTxKeyAck": 551,
+                    "MessageType_MoneroLiveRefreshStartRequest": 552,
+                    "MessageType_MoneroLiveRefreshStartAck": 553,
+                    "MessageType_MoneroLiveRefreshStepRequest": 554,
+                    "MessageType_MoneroLiveRefreshStepAck": 555,
+                    "MessageType_MoneroLiveRefreshFinalRequest": 556,
+                    "MessageType_MoneroLiveRefreshFinalAck": 557,
+                    "MessageType_EosGetPublicKey": 600,
+                    "MessageType_EosPublicKey": 601,
+                    "MessageType_EosSignTx": 602,
+                    "MessageType_EosTxActionRequest": 603,
+                    "MessageType_EosTxActionAck": 604,
+                    "MessageType_EosSignedTx": 605,
+                    "MessageType_BinanceGetAddress": 700,
+                    "MessageType_BinanceAddress": 701,
+                    "MessageType_BinanceGetPublicKey": 702,
+                    "MessageType_BinancePublicKey": 703,
+                    "MessageType_BinanceSignTx": 704,
+                    "MessageType_BinanceTxRequest": 705,
+                    "MessageType_BinanceTransferMsg": 706,
+                    "MessageType_BinanceOrderMsg": 707,
+                    "MessageType_BinanceCancelMsg": 708,
+                    "MessageType_BinanceSignedTx": 709,
+                    "MessageType_WebAuthnListResidentCredentials": 800,
+                    "MessageType_WebAuthnCredentials": 801,
+                    "MessageType_WebAuthnAddResidentCredential": 802,
+                    "MessageType_WebAuthnRemoveResidentCredential": 803
+                  }
+                },
+                "binance": {
+                  "options": {
+                    "java_package": "com.satoshilabs.trezor.lib.protobuf",
+                    "java_outer_classname": "TrezorMessageBinance"
+                  },
+                  "nested": {
+                    "BinanceGetAddress": {
+                      "fields": {
+                        "address_n": {
+                          "rule": "repeated",
+                          "type": "uint32",
+                          "id": 1,
+                          "options": {
+                            "packed": false
+                          }
+                        },
+                        "show_display": {
+                          "type": "bool",
+                          "id": 2
+                        }
+                      }
+                    },
+                    "BinanceAddress": {
+                      "fields": {
+                        "address": {
+                          "rule": "required",
+                          "type": "string",
+                          "id": 1
+                        }
+                      }
+                    },
+                    "BinanceGetPublicKey": {
+                      "fields": {
+                        "address_n": {
+                          "rule": "repeated",
+                          "type": "uint32",
+                          "id": 1,
+                          "options": {
+                            "packed": false
+                          }
+                        },
+                        "show_display": {
+                          "type": "bool",
+                          "id": 2
+                        }
+                      }
+                    },
+                    "BinancePublicKey": {
+                      "fields": {
+                        "public_key": {
+                          "rule": "required",
+                          "type": "bytes",
+                          "id": 1
+                        }
+                      }
+                    },
+                    "BinanceSignTx": {
+                      "fields": {
+                        "address_n": {
+                          "rule": "repeated",
+                          "type": "uint32",
+                          "id": 1,
+                          "options": {
+                            "packed": false
+                          }
+                        },
+                        "msg_count": {
+                          "type": "uint32",
+                          "id": 2
+                        },
+                        "account_number": {
+                          "type": "sint64",
+                          "id": 3
+                        },
+                        "chain_id": {
+                          "type": "string",
+                          "id": 4
+                        },
+                        "memo": {
+                          "type": "string",
+                          "id": 5
+                        },
+                        "sequence": {
+                          "type": "sint64",
+                          "id": 6
+                        },
+                        "source": {
+                          "type": "sint64",
+                          "id": 7
+                        }
+                      }
+                    },
+                    "BinanceTxRequest": {
+                      "fields": {}
+                    },
+                    "BinanceTransferMsg": {
+                      "fields": {
+                        "inputs": {
+                          "rule": "repeated",
+                          "type": "BinanceInputOutput",
+                          "id": 1
+                        },
+                        "outputs": {
+                          "rule": "repeated",
+                          "type": "BinanceInputOutput",
+                          "id": 2
+                        }
+                      },
+                      "nested": {
+                        "BinanceInputOutput": {
+                          "fields": {
+                            "address": {
+                              "type": "string",
+                              "id": 1
+                            },
+                            "coins": {
+                              "rule": "repeated",
+                              "type": "BinanceCoin",
+                              "id": 2
+                            }
+                          }
+                        },
+                        "BinanceCoin": {
+                          "fields": {
+                            "amount": {
+                              "type": "sint64",
+                              "id": 1
+                            },
+                            "denom": {
+                              "type": "string",
+                              "id": 2
+                            }
+                          }
+                        }
+                      }
+                    },
+                    "BinanceOrderMsg": {
+                      "fields": {
+                        "id": {
+                          "type": "string",
+                          "id": 1
+                        },
+                        "ordertype": {
+                          "type": "BinanceOrderType",
+                          "id": 2
+                        },
+                        "price": {
+                          "type": "sint64",
+                          "id": 3
+                        },
+                        "quantity": {
+                          "type": "sint64",
+                          "id": 4
+                        },
+                        "sender": {
+                          "type": "string",
+                          "id": 5
+                        },
+                        "side": {
+                          "type": "BinanceOrderSide",
+                          "id": 6
+                        },
+                        "symbol": {
+                          "type": "string",
+                          "id": 7
+                        },
+                        "timeinforce": {
+                          "type": "BinanceTimeInForce",
+                          "id": 8
+                        }
+                      },
+                      "nested": {
+                        "BinanceOrderType": {
+                          "values": {
+                            "OT_UNKNOWN": 0,
+                            "MARKET": 1,
+                            "LIMIT": 2,
+                            "OT_RESERVED": 3
+                          }
+                        },
+                        "BinanceOrderSide": {
+                          "values": {
+                            "SIDE_UNKNOWN": 0,
+                            "BUY": 1,
+                            "SELL": 2
+                          }
+                        },
+                        "BinanceTimeInForce": {
+                          "values": {
+                            "TIF_UNKNOWN": 0,
+                            "GTE": 1,
+                            "TIF_RESERVED": 2,
+                            "IOC": 3
+                          }
+                        }
+                      }
+                    },
+                    "BinanceCancelMsg": {
+                      "fields": {
+                        "refid": {
+                          "type": "string",
+                          "id": 1
+                        },
+                        "sender": {
+                          "type": "string",
+                          "id": 2
+                        },
+                        "symbol": {
+                          "type": "string",
+                          "id": 3
+                        }
+                      }
+                    },
+                    "BinanceSignedTx": {
+                      "fields": {
+                        "signature": {
+                          "rule": "required",
+                          "type": "bytes",
+                          "id": 1
+                        },
+                        "public_key": {
+                          "rule": "required",
+                          "type": "bytes",
+                          "id": 2
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "google": {
+      "nested": {
+        "protobuf": {
+          "nested": {
+            "FileDescriptorSet": {
+              "fields": {
+                "file": {
+                  "rule": "repeated",
+                  "type": "FileDescriptorProto",
+                  "id": 1
+                }
+              }
+            },
+            "FileDescriptorProto": {
+              "fields": {
+                "name": {
+                  "type": "string",
+                  "id": 1
+                },
+                "package": {
+                  "type": "string",
+                  "id": 2
+                },
+                "dependency": {
+                  "rule": "repeated",
+                  "type": "string",
+                  "id": 3
+                },
+                "public_dependency": {
+                  "rule": "repeated",
+                  "type": "int32",
+                  "id": 10,
+                  "options": {
+                    "packed": false
+                  }
+                },
+                "weak_dependency": {
+                  "rule": "repeated",
+                  "type": "int32",
+                  "id": 11,
+                  "options": {
+                    "packed": false
+                  }
+                },
+                "message_type": {
+                  "rule": "repeated",
+                  "type": "DescriptorProto",
+                  "id": 4
+                },
+                "enum_type": {
+                  "rule": "repeated",
+                  "type": "EnumDescriptorProto",
+                  "id": 5
+                },
+                "service": {
+                  "rule": "repeated",
+                  "type": "ServiceDescriptorProto",
+                  "id": 6
+                },
+                "extension": {
+                  "rule": "repeated",
+                  "type": "FieldDescriptorProto",
+                  "id": 7
+                },
+                "options": {
+                  "type": "FileOptions",
+                  "id": 8
+                },
+                "source_code_info": {
+                  "type": "SourceCodeInfo",
+                  "id": 9
+                },
+                "syntax": {
+                  "type": "string",
+                  "id": 12
+                }
+              }
+            },
+            "DescriptorProto": {
+              "fields": {
+                "name": {
+                  "type": "string",
+                  "id": 1
+                },
+                "field": {
+                  "rule": "repeated",
+                  "type": "FieldDescriptorProto",
+                  "id": 2
+                },
+                "extension": {
+                  "rule": "repeated",
+                  "type": "FieldDescriptorProto",
+                  "id": 6
+                },
+                "nested_type": {
+                  "rule": "repeated",
+                  "type": "DescriptorProto",
+                  "id": 3
+                },
+                "enum_type": {
+                  "rule": "repeated",
+                  "type": "EnumDescriptorProto",
+                  "id": 4
+                },
+                "extension_range": {
+                  "rule": "repeated",
+                  "type": "ExtensionRange",
+                  "id": 5
+                },
+                "oneof_decl": {
+                  "rule": "repeated",
+                  "type": "OneofDescriptorProto",
+                  "id": 8
+                },
+                "options": {
+                  "type": "MessageOptions",
+                  "id": 7
+                },
+                "reserved_range": {
+                  "rule": "repeated",
+                  "type": "ReservedRange",
+                  "id": 9
+                },
+                "reserved_name": {
+                  "rule": "repeated",
+                  "type": "string",
+                  "id": 10
+                }
+              },
+              "nested": {
+                "ExtensionRange": {
+                  "fields": {
+                    "start": {
+                      "type": "int32",
+                      "id": 1
+                    },
+                    "end": {
+                      "type": "int32",
+                      "id": 2
+                    }
+                  }
+                },
+                "ReservedRange": {
+                  "fields": {
+                    "start": {
+                      "type": "int32",
+                      "id": 1
+                    },
+                    "end": {
+                      "type": "int32",
+                      "id": 2
+                    }
+                  }
+                }
+              }
+            },
+            "FieldDescriptorProto": {
+              "fields": {
+                "name": {
+                  "type": "string",
+                  "id": 1
+                },
+                "number": {
+                  "type": "int32",
+                  "id": 3
+                },
+                "label": {
+                  "type": "Label",
+                  "id": 4
+                },
+                "type": {
+                  "type": "Type",
+                  "id": 5
+                },
+                "type_name": {
+                  "type": "string",
+                  "id": 6
+                },
+                "extendee": {
+                  "type": "string",
+                  "id": 2
+                },
+                "default_value": {
+                  "type": "string",
+                  "id": 7
+                },
+                "oneof_index": {
+                  "type": "int32",
+                  "id": 9
+                },
+                "json_name": {
+                  "type": "string",
+                  "id": 10
+                },
+                "options": {
+                  "type": "FieldOptions",
+                  "id": 8
+                }
+              },
+              "nested": {
+                "Type": {
+                  "values": {
+                    "TYPE_DOUBLE": 1,
+                    "TYPE_FLOAT": 2,
+                    "TYPE_INT64": 3,
+                    "TYPE_UINT64": 4,
+                    "TYPE_INT32": 5,
+                    "TYPE_FIXED64": 6,
+                    "TYPE_FIXED32": 7,
+                    "TYPE_BOOL": 8,
+                    "TYPE_STRING": 9,
+                    "TYPE_GROUP": 10,
+                    "TYPE_MESSAGE": 11,
+                    "TYPE_BYTES": 12,
+                    "TYPE_UINT32": 13,
+                    "TYPE_ENUM": 14,
+                    "TYPE_SFIXED32": 15,
+                    "TYPE_SFIXED64": 16,
+                    "TYPE_SINT32": 17,
+                    "TYPE_SINT64": 18
+                  }
+                },
+                "Label": {
+                  "values": {
+                    "LABEL_OPTIONAL": 1,
+                    "LABEL_REQUIRED": 2,
+                    "LABEL_REPEATED": 3
+                  }
+                }
+              }
+            },
+            "OneofDescriptorProto": {
+              "fields": {
+                "name": {
+                  "type": "string",
+                  "id": 1
+                },
+                "options": {
+                  "type": "OneofOptions",
+                  "id": 2
+                }
+              }
+            },
+            "EnumDescriptorProto": {
+              "fields": {
+                "name": {
+                  "type": "string",
+                  "id": 1
+                },
+                "value": {
+                  "rule": "repeated",
+                  "type": "EnumValueDescriptorProto",
+                  "id": 2
+                },
+                "options": {
+                  "type": "EnumOptions",
+                  "id": 3
+                }
+              }
+            },
+            "EnumValueDescriptorProto": {
+              "fields": {
+                "name": {
+                  "type": "string",
+                  "id": 1
+                },
+                "number": {
+                  "type": "int32",
+                  "id": 2
+                },
+                "options": {
+                  "type": "EnumValueOptions",
+                  "id": 3
+                }
+              }
+            },
+            "ServiceDescriptorProto": {
+              "fields": {
+                "name": {
+                  "type": "string",
+                  "id": 1
+                },
+                "method": {
+                  "rule": "repeated",
+                  "type": "MethodDescriptorProto",
+                  "id": 2
+                },
+                "options": {
+                  "type": "ServiceOptions",
+                  "id": 3
+                }
+              }
+            },
+            "MethodDescriptorProto": {
+              "fields": {
+                "name": {
+                  "type": "string",
+                  "id": 1
+                },
+                "input_type": {
+                  "type": "string",
+                  "id": 2
+                },
+                "output_type": {
+                  "type": "string",
+                  "id": 3
+                },
+                "options": {
+                  "type": "MethodOptions",
+                  "id": 4
+                },
+                "client_streaming": {
+                  "type": "bool",
+                  "id": 5
+                },
+                "server_streaming": {
+                  "type": "bool",
+                  "id": 6
+                }
+              }
+            },
+            "FileOptions": {
+              "fields": {
+                "java_package": {
+                  "type": "string",
+                  "id": 1
+                },
+                "java_outer_classname": {
+                  "type": "string",
+                  "id": 8
+                },
+                "java_multiple_files": {
+                  "type": "bool",
+                  "id": 10
+                },
+                "java_generate_equals_and_hash": {
+                  "type": "bool",
+                  "id": 20,
+                  "options": {
+                    "deprecated": true
+                  }
+                },
+                "java_string_check_utf8": {
+                  "type": "bool",
+                  "id": 27
+                },
+                "optimize_for": {
+                  "type": "OptimizeMode",
+                  "id": 9,
+                  "options": {
+                    "default": "SPEED"
+                  }
+                },
+                "go_package": {
+                  "type": "string",
+                  "id": 11
+                },
+                "cc_generic_services": {
+                  "type": "bool",
+                  "id": 16
+                },
+                "java_generic_services": {
+                  "type": "bool",
+                  "id": 17
+                },
+                "py_generic_services": {
+                  "type": "bool",
+                  "id": 18
+                },
+                "deprecated": {
+                  "type": "bool",
+                  "id": 23
+                },
+                "cc_enable_arenas": {
+                  "type": "bool",
+                  "id": 31
+                },
+                "objc_class_prefix": {
+                  "type": "string",
+                  "id": 36
+                },
+                "csharp_namespace": {
+                  "type": "string",
+                  "id": 37
+                },
+                "uninterpreted_option": {
+                  "rule": "repeated",
+                  "type": "UninterpretedOption",
+                  "id": 999
+                }
+              },
+              "extensions": [
+                [
+                  1000,
+                  536870911
+                ]
+              ],
+              "reserved": [
+                [
+                  38,
+                  38
+                ]
+              ],
+              "nested": {
+                "OptimizeMode": {
+                  "values": {
+                    "SPEED": 1,
+                    "CODE_SIZE": 2,
+                    "LITE_RUNTIME": 3
+                  }
+                }
+              }
+            },
+            "MessageOptions": {
+              "fields": {
+                "message_set_wire_format": {
+                  "type": "bool",
+                  "id": 1
+                },
+                "no_standard_descriptor_accessor": {
+                  "type": "bool",
+                  "id": 2
+                },
+                "deprecated": {
+                  "type": "bool",
+                  "id": 3
+                },
+                "map_entry": {
+                  "type": "bool",
+                  "id": 7
+                },
+                "uninterpreted_option": {
+                  "rule": "repeated",
+                  "type": "UninterpretedOption",
+                  "id": 999
+                }
+              },
+              "extensions": [
+                [
+                  1000,
+                  536870911
+                ]
+              ],
+              "reserved": [
+                [
+                  8,
+                  8
+                ]
+              ]
+            },
+            "FieldOptions": {
+              "fields": {
+                "ctype": {
+                  "type": "CType",
+                  "id": 1,
+                  "options": {
+                    "default": "STRING"
+                  }
+                },
+                "packed": {
+                  "type": "bool",
+                  "id": 2
+                },
+                "jstype": {
+                  "type": "JSType",
+                  "id": 6,
+                  "options": {
+                    "default": "JS_NORMAL"
+                  }
+                },
+                "lazy": {
+                  "type": "bool",
+                  "id": 5
+                },
+                "deprecated": {
+                  "type": "bool",
+                  "id": 3
+                },
+                "weak": {
+                  "type": "bool",
+                  "id": 10
+                },
+                "uninterpreted_option": {
+                  "rule": "repeated",
+                  "type": "UninterpretedOption",
+                  "id": 999
+                }
+              },
+              "extensions": [
+                [
+                  1000,
+                  536870911
+                ]
+              ],
+              "reserved": [
+                [
+                  4,
+                  4
+                ]
+              ],
+              "nested": {
+                "CType": {
+                  "values": {
+                    "STRING": 0,
+                    "CORD": 1,
+                    "STRING_PIECE": 2
+                  }
+                },
+                "JSType": {
+                  "values": {
+                    "JS_NORMAL": 0,
+                    "JS_STRING": 1,
+                    "JS_NUMBER": 2
+                  }
+                }
+              }
+            },
+            "OneofOptions": {
+              "fields": {
+                "uninterpreted_option": {
+                  "rule": "repeated",
+                  "type": "UninterpretedOption",
+                  "id": 999
+                }
+              },
+              "extensions": [
+                [
+                  1000,
+                  536870911
+                ]
+              ]
+            },
+            "EnumOptions": {
+              "fields": {
+                "allow_alias": {
+                  "type": "bool",
+                  "id": 2
+                },
+                "deprecated": {
+                  "type": "bool",
+                  "id": 3
+                },
+                "uninterpreted_option": {
+                  "rule": "repeated",
+                  "type": "UninterpretedOption",
+                  "id": 999
+                }
+              },
+              "extensions": [
+                [
+                  1000,
+                  536870911
+                ]
+              ]
+            },
+            "EnumValueOptions": {
+              "fields": {
+                "deprecated": {
+                  "type": "bool",
+                  "id": 1
+                },
+                "uninterpreted_option": {
+                  "rule": "repeated",
+                  "type": "UninterpretedOption",
+                  "id": 999
+                }
+              },
+              "extensions": [
+                [
+                  1000,
+                  536870911
+                ]
+              ]
+            },
+            "ServiceOptions": {
+              "fields": {
+                "deprecated": {
+                  "type": "bool",
+                  "id": 33
+                },
+                "uninterpreted_option": {
+                  "rule": "repeated",
+                  "type": "UninterpretedOption",
+                  "id": 999
+                }
+              },
+              "extensions": [
+                [
+                  1000,
+                  536870911
+                ]
+              ]
+            },
+            "MethodOptions": {
+              "fields": {
+                "deprecated": {
+                  "type": "bool",
+                  "id": 33
+                },
+                "uninterpreted_option": {
+                  "rule": "repeated",
+                  "type": "UninterpretedOption",
+                  "id": 999
+                }
+              },
+              "extensions": [
+                [
+                  1000,
+                  536870911
+                ]
+              ]
+            },
+            "UninterpretedOption": {
+              "fields": {
+                "name": {
+                  "rule": "repeated",
+                  "type": "NamePart",
+                  "id": 2
+                },
+                "identifier_value": {
+                  "type": "string",
+                  "id": 3
+                },
+                "positive_int_value": {
+                  "type": "uint64",
+                  "id": 4
+                },
+                "negative_int_value": {
+                  "type": "int64",
+                  "id": 5
+                },
+                "double_value": {
+                  "type": "double",
+                  "id": 6
+                },
+                "string_value": {
+                  "type": "bytes",
+                  "id": 7
+                },
+                "aggregate_value": {
+                  "type": "string",
+                  "id": 8
+                }
+              },
+              "nested": {
+                "NamePart": {
+                  "fields": {
+                    "name_part": {
+                      "rule": "required",
+                      "type": "string",
+                      "id": 1
+                    },
+                    "is_extension": {
+                      "rule": "required",
+                      "type": "bool",
+                      "id": 2
+                    }
+                  }
+                }
+              }
+            },
+            "SourceCodeInfo": {
+              "fields": {
+                "location": {
+                  "rule": "repeated",
+                  "type": "Location",
+                  "id": 1
+                }
+              },
+              "nested": {
+                "Location": {
+                  "fields": {
+                    "path": {
+                      "rule": "repeated",
+                      "type": "int32",
+                      "id": 1
+                    },
+                    "span": {
+                      "rule": "repeated",
+                      "type": "int32",
+                      "id": 2
+                    },
+                    "leading_comments": {
+                      "type": "string",
+                      "id": 3
+                    },
+                    "trailing_comments": {
+                      "type": "string",
+                      "id": 4
+                    },
+                    "leading_detached_comments": {
+                      "rule": "repeated",
+                      "type": "string",
+                      "id": 6
+                    }
+                  }
+                }
+              }
+            },
+            "GeneratedCodeInfo": {
+              "fields": {
+                "annotation": {
+                  "rule": "repeated",
+                  "type": "Annotation",
+                  "id": 1
+                }
+              },
+              "nested": {
+                "Annotation": {
+                  "fields": {
+                    "path": {
+                      "rule": "repeated",
+                      "type": "int32",
+                      "id": 1
+                    },
+                    "source_file": {
+                      "type": "string",
+                      "id": 2
+                    },
+                    "begin": {
+                      "type": "int32",
+                      "id": 3
+                    },
+                    "end": {
+                      "type": "int32",
+                      "id": 4
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

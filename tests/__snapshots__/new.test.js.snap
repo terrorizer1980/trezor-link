@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`encoding json -> protobuf message Address {"address":"some string"} 1`] = `"001e0000000d0a0b736f6d6520737472696e67"`;
+
+exports[`encoding json -> protobuf message ApplyFlags {"flags":32} 1`] = `"001c000000020820"`;
+
+exports[`encoding json -> protobuf message AuthorizeCoinJoin {"coordinator":"some string","max_total_fee":"64","fee_per_anonymity":32,"address_n":[32],"coin_name":"Bitcoin","script_type":"SPENDADDRESS","amount_unit":"BITCOIN"} 1`] = `"0033000000200a0b736f6d6520737472696e671040182020202a07426974636f696e30005800"`;
+
+exports[`encoding json -> protobuf message AuthorizeCoinJoin {"coordinator":"some string","max_total_fee":64,"fee_per_anonymity":32,"address_n":[32],"coin_name":"Bitcoin","script_type":"SPENDADDRESS","amount_unit":"BITCOIN"} 1`] = `"0033000000200a0b736f6d6520737472696e671040182020202a07426974636f696e30005800"`;

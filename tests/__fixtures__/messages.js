@@ -41,6 +41,8 @@ const getValueForField = (field) => {
     if (field.options && field.options.default) {
         return field.options.default;
     }
+
+    // 'primitive' types
     switch (field.type) {
         case 'bool':
             value = true;
@@ -52,6 +54,7 @@ const getValueForField = (field) => {
             value = 32;
             break;
         case 'uint64': 
+            // value = "64";
             value = 64;
             break;
         case 'sint32':
@@ -65,12 +68,13 @@ const getValueForField = (field) => {
             break;
     }
     return value;
-
 }
+
 const buildParams = (message) => {
     const params = {};
     // then it is nested enum
     if (message.values) {
+        // return 0;
         return message.values[0].name
     }
     message.fields.forEach(field => {
@@ -83,14 +87,15 @@ const buildParams = (message) => {
             }
             en = findEnumType(field.type, message, messages);
             if (en) {
+                // value = 0;
                 value = en;
             }
         }
         if (value) {
             if (field.rule === 'repeated') {
                 if (en) {
-                    // crazy crazy crazy. encoding enum as number generaly works
-                    // but behaviour of decoding differs wheter it is in array or not. 
+                    // crazy crazy crazy. encoding enum as number generally works
+                    // but behaviour of decoding differs whether it is in array or not. 
                     // if in array it would decode to number
                     // if not in array it would decode to string label like Bitcoin_Capability
                     return params[field.name] = [1];
@@ -107,13 +112,12 @@ const buildParams = (message) => {
 
 const buildFixtures = (messages) => {
     const fixtures = [];
-
     
     // I only want to test messages that are really parsed by trezor-link, which are messages listed under
     // messages.json.enums[1] (name="MessageType").
     const messageTypeEnum = messages.enums.find(en => en.name === 'MessageType').values;
     const messageNames = messageTypeEnum.map(m => {
-        return m.name.substr(m.name.lastIndexOf('_')+ 1);
+        return m.name.substr(m.name.lastIndexOf('_') + 1);
     })
 
     messages.messages

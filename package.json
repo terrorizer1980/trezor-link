@@ -8,7 +8,10 @@
     "lint": "eslint src",
     "build:lib": "./scripts/build-lib.sh",
     "publish:lib": "./scripts/publish-lib.sh",
-    "test": "jest",
+    "test:unit": "jest",
+    "test:unit:basic": "jest --testPathPattern basic.test --coverage false",
+    "test:unit:old": "jest --testPathPattern old.test --coverage false",
+    "test:unit:new": "jest --testPathPattern new.test --coverage false",
     "test:integration": "jest --verbose -c jest.config.integration.js"
   },
   "repository": "https://github.com/trezor/trezor-link.git",
@@ -40,10 +43,13 @@
   },
   "dependencies": {
     "bigi": "^1.4.1",
+    "bytebuffer": "^5.0.1",
     "ecurve": "^1.0.3",
     "json-stable-stringify": "^1.0.1",
+    "long": "^4.0.0",
     "node-fetch": "^2.6.1",
     "object.values": "^1.1.2",
+    "protobufjs": "^6.11.2",
     "protobufjs-old-fixed-webpack": "3.8.5",
     "semver-compare": "^1.0.0",
     "whatwg-fetch": "^3.5.0"

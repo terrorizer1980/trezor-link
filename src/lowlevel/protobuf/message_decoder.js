@@ -52,6 +52,7 @@ export class MessageDecoder {
   // Returns the actual decoded message, as a ProtoBuf.js object
   _decodedMessage() : ProtoBuf.Builder.Message {
     const constructor = this._messageInfo().messageConstructor;
+    console.log('this.data decode', this.data)
     return constructor.decode(this.data);
   }
 
@@ -66,7 +67,7 @@ export class MessageDecoder {
 }
 
 // Converts any ProtoBuf message to JSON in Trezor.js-friendly format
-function messageToJSON(message: ProtoBuf.Builder.Message) : Object {
+export function messageToJSON(message: ProtoBuf.Builder.Message) : Object {
   const res = {};
   const meta = message.$type;
 
